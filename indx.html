@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>yummy</title>
+</head>
+
+<body>
+
+     <!-- Username section -->
+
+     <section class="d-flex justify-content-end">
+        <h2 class="p-2 m-2 bg-warning rounded-2 userName d-none ">welcome Ali</h2>
+    </section>
+    
+    <!-- Search section -->
+
+    <section id="search" class="py-4"></section>
+
+    <!-- Loading section -->
+
+    <section id="loading">
+        <span class="loader top-50 start-50  translate-middle"></span>
+    </section>
+
+
+
+    <!-- Side section -->
+
+    <aside class="sideBar position-fixed top-0 bottom-0 d-flex">
+        <div class="sideBarInner text-white d-flex flex-column justify-content-between p-2">
+            <nav class="navbar overflow-hidden">
+                <div class="container-fluid">
+                    <ul class="navbar-nav d-flex flex-column">
+                        <li class="nav-item">
+                            <a onclick="showSearch()" class="nav-link" href="#">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="getCategories()" class="nav-link" href="#">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="getArea()" class="nav-link" href="#">Area</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="getIngredients()" class="nav-link" href="#">Ingredients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a onclick="showContact()" class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="sideCap ">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+                <p class="pt-2 pe-2">Copyright Â© 2019 All Rights <br> Reserved.</p>
+            </div>
+        </div>
+        <div class="sideIcons bg-light d-flex flex-column justify-content-between align-items-center p-2">
+            <img onclick="getFoods(),closeSearch(),closeDetails()" class="sideLogo" src="imgs/logo.png" alt="">
+            <i class="fa-solid closeSideBar fa-align-justify fa-2x"></i>
+            <div class="Icons d-flex flex-column">
+                <i class="fa-solid fa-globe pb-2"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </aside>
+
+    </aside>
+
+
+
+    <!-- Details section -->
+
+
+    <section>
+        <div class="container">
+            <div class="row details">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Home section -->
+
+    <section class="pb-5">
+        <div class="container">
+            <div class="row g-4 rowData">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- The End -->
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
